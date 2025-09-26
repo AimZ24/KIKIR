@@ -1,0 +1,119 @@
+body {
+      overflow-x: hidden;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #222;
+    }
+    
+    .navbar {
+      transition: box-shadow 0.3s;
+    }
+    
+    .navbar .navbar-brand span {
+      color: #0d6efd;
+      letter-spacing: 2px;
+    }
+    
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd;
+    }
+    
+    .hero {
+      min-height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    /* Overlay agar teks terlihat jelas */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('kikir-background.jpeg') no-repeat center center/cover;
+    }
+    
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      
+    }
+    
+    /* Animasi elemen hero */
+    .hero-content {
+      transform: translateY(0);
+      opacity: 1;
+      transition: all 0.5s ease-out;
+    }
+    
+    .hero-content.scrolled {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    #visi{
+    
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('bgornag.jpeg') no-repeat center center/cover;
+    }
+
+    
+    .btn-primary {
+      background: #0d6efd;
+      border: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.15);
+    }
+    
+    .btn-primary:hover, .btn-primary:focus {
+      background: #0b5ed7;
+      box-shadow: 0 4px 16px rgba(13,110,253,0.25);
+    }
+    
+    section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    
+
+    
+    footer {
+      background: #222;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 1rem;
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('footer.jpeg') no-repeat center center/cover;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1, .hero h2 {
+        font-size: 2rem;
+      }
+      section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
