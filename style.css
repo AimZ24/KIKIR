@@ -48,7 +48,22 @@ body {
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('kikir-background.jpeg') no-repeat center center/cover;
     }
-    
+    .image-container {
+      --_g: 10%/45% 45% no-repeat conic-gradient(#000 0 0);
+    mask: 
+      left   var(--_i,) top    var(--_g),
+      bottom var(--_i,) left   var(--_g),
+      top    var(--_i,) right  var(--_g),
+      right  var(--_i,) bottom var(--_g);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+    }
+  
+    .image-container:hover {
+      --_i: 10%;
+      filter: grayscale(0);
+    }
     .hero .container {
       position: relative;
       z-index: 2;
@@ -76,6 +91,9 @@ body {
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url('bgornag.jpeg') no-repeat center center/cover;
     }
+
+
+  
 
     /* CUSTOM STYLES FOR DOCUMENTATION SECTION */
     .bg-dark-custom {
