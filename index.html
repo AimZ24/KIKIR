@@ -20,10 +20,13 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="kikir.png" alt="KIRALA Logo" width="60" height="60" class="rounded me-2">
-                <span class="fw-bold">KIRALA</span>
-            </a>
+            <div class="split-text-container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="kikir.png" alt="KIRALA Logo" width="60" height="60" class="rounded me-2">
+                    <span class="text-part left">KIR</span> <!-- Tambahkan class 'left' untuk animasi logo -->
+                    <span class="text-part right">ALA</span> <!-- Tambahkan class 'right' untuk animasi logo -->
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,13 +46,14 @@
 
     <section id = "home" class="hero d-flex align-items-center text-center">
         <div class="container hero-content">
-            <h1 class="display-3 fw-bold animate__animated animate__fadeInUp">
+            <!-- Menghapus class animate__animated bawaan Bootstrap untuk digantikan dengan CSS kustom di style.css -->
+            <h1 class="display-3 fw-bold">
                 KIRALA
             </h1>
-            <h2 class="display-5 fw-bold animate__animated animate__fadeInUp animate__delay-1s">
+            <h2 class="display-5 fw-bold">
                 Karya Ilmiah Remaja Smala
             </h2>
-            <p class="lead mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+            <p class="lead mt-4">
                 KIRALA adalah sebuah organisasi yang bergerak di bidang penelitian ilmiah untuk remaja di SMA Negeri 5 Madiun.
             </p>
         </div>
@@ -57,14 +61,14 @@
 
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
-                    <h2 class="fw-bold animate__animated animate__delay-2s ">About Us</h2>
+                    <h2 class="fw-bold">About Us</h2>
                     <p class="text-muted">Learn more about KIRALA</p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-8 fade-in-on-scroll">
                     <p class="lead text-center">
                         KIRALA (Karya Ilmiah Remaja Smala) adalah sebuah organisasi yang bergerak di bidang penelitian ilmiah untuk remaja di SMA Negeri 5 Madiun. Didirikan pada tahun 2004, KIRALA bertujuan untuk mengembangkan minat dan bakat siswa dalam bidang penelitian serta mendorong mereka untuk berkontribusi dalam dunia ilmu pengetahuan. Melalui berbagai kegiatan seperti workshop, seminar, dan kompetisi, KIRALA berusaha menciptakan lingkungan yang mendukung kreativitas dan inovasi di kalangan remaja.
                     </p>
@@ -74,14 +78,14 @@
 
     <section id="visi" class="py-5 bg-light">
         <div class="container visi-content">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
-                    <h2 class="display-5 fw-bold animate__animated animate__fadeInUp animate__delay-1s"style="color: white">Visi</h2>
+                    <h2 class="display-5 fw-bold"style="color: white">Visi</h2>
                     <p class="fw-bold" style="color: white">Our Vision</p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-8 fade-in-on-scroll">
                     <p class="lead text-center" style="color: white">
                         Menumbuhkan generasi muda yang kritis, kreatif, inovatif, dan berintegritas melalui penelitian ilmiah serta mampu memberikan kontribusi nyata bagi sekolah, masyarakat, dan bangsa
                     </p>
@@ -93,14 +97,15 @@
 
     <section id="misi" class="py-5">
         <div class="container">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
                     <h2 class="fw-bold">Misi</h2>
                     <p class="text-muted">Our Mission</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <!-- Tambahkan fade-in-on-scroll di setiap kolom misi -->
+                <div class="col-md-4 mb-4 fade-in-on-scroll" style="transition-delay: 0.1s;">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Misi 1</h5>
@@ -109,16 +114,16 @@
                         </div>
                     </div>
                 </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Misi 2</h5>
-                                <p class="card-text">Menanamkan budaya berpikir kritis, logis, analitis, serta solutif dalam menghadapi permasalahan di lingkungan sekitar.</p>
-                            </div>
+                <div class="col-md-4 mb-4 fade-in-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Misi 2</h5>
+                            <p class="card-text">Menanamkan budaya berpikir kritis, logis, analitis, serta solutif dalam menghadapi permasalahan di lingkungan sekitar.</p>
                         </div>
                     </div>
+                </div>
                 
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 fade-in-on-scroll" style="transition-delay: 0.3s;">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Misi 3</h5>
@@ -132,14 +137,15 @@
 
     <section id="pembina" class="py-5 bg-light">
         <div class="container pembina">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
                     <h2 class="fw-bold">Pembina KIRALA</h2>
                     <p class="text-muted">Meet Our Advisor</p>
                 </div>
             </div>
             <div class="row justify-content-center align-items-stretch">
-                <div class="col-md-4 d-flex flex-column justify-content-between">
+                <!-- Tambahkan fade-in-on-scroll di kolom Pembina -->
+                <div class="col-md-4 d-flex flex-column justify-content-between fade-in-on-scroll">
                     <div class="text-center mb-4">
                         <img src="seandkk.png" alt="Pembina KIRALA" class="rounded-circle shadow mb-2" style="width: 140px; height: 140px; object-fit: cover;">
                         <div class="fw-semibold mt-1">Sahasika Sean Putra, S.Pd dan Rahma Fitri Anisa, S.Pd</div>
@@ -158,16 +164,17 @@
 
     <section id="okeketua" class="py-5 bg-light">
         <div class="container okeketua">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
                     <h2 class="fw-bold">Inti KIRALA</h2>
                     <p class="text-muted">Meet Our Leaders</p>
                 </div>
             </div>
             <div class="row justify-content-center align-items-stretch">
+                <!-- Tambahkan fade-in-on-scroll di setiap pemimpin inti -->
                 <div class="col-md-4 d-flex flex-column justify-content-between">
                     
-                    <div class="text-center mb-4">
+                    <div class="text-center mb-4 fade-in-on-scroll" style="transition-delay: 0.1s;">
                         <img src="gila.png" alt="Ketua KIRALA" class="rounded-circle shadow mb-2" style="width: 140px; height: 140px; object-fit: cover;">
                         <div class="fw-semibold mt-1">Kyo</div>
                         <div class="text-muted small">Ketua</div>
@@ -177,7 +184,7 @@
                             <p class="mb-0">“Pemimpin yang selalu semangat, suka tantangan, dan siap membawa KIRALA ke level berikutnya!”</p>
                         </div>
                     </div>
-                    <div class="text-center mb-4">
+                    <div class="text-center mb-4 fade-in-on-scroll" style="transition-delay: 0.2s;">
                         <img src="selvi.png" alt="Wakil KIRALA" class="rounded-circle shadow mb-2" style="width: 140px; height: 140px; object-fit: cover;">
                         <div class="fw-semibold mt-1">Selvy</div>
                         <div class="text-muted small">Wakil Ketua 1</div>
@@ -187,7 +194,7 @@
                             <p class="mb-0">“Selalu mendukung tim, penuh ide kreatif, dan jago bikin suasana jadi seru!”</p>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center fade-in-on-scroll" style="transition-delay: 0.3s;">
                         <img src="ilham.png" alt="Sekretaris" class="rounded-circle shadow mb-2" style="width: 140px; height: 140px; object-fit: cover;">
                         <div class="fw-semibold mt-1">Ilham</div>
                         <div class="text-muted small">Wakil Ketua 2</div>
@@ -204,25 +211,27 @@
     
     <section id="spectra" class="py-5 bg-light">
         <div class="container spectraku">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4 fade-in-on-scroll">
                 <div class="col">
                     <h2 class="fw-bold">SPECTRA</h2>
                     <p class="text-muted">Our Magazine</p>
                 </div>
             </div>
+            <!-- Anda bisa menambahkan konten untuk SPECTRA di sini -->
         </div>
     </section>   
 
     <section id="dokumentasi" class="py-5 bg-dark-custom text-light">
         <div class="container">
-            <div class="row text-center mb-5">
+            <div class="row text-center mb-5 fade-in-on-scroll">
                 <div class="col">
                     <h2 class="fw-bold text-white">Dokumentasi KIRALA</h2>
                     <p class="text-light-50">Our Activities Showcase</p>
                 </div>
             </div>
 
-            <div class="row g-4 align-items-center mb-5 p-3 rounded shadow-lg bg-light-trans">
+            <!-- Tambahkan class 'fade-in-on-scroll' di elemen row dokumentasi -->
+            <div class="row g-4 align-items-center mb-5 p-3 rounded shadow-lg bg-light-trans fade-in-on-scroll">
                 <div class="col-md-6 order-md-2">
                     <img src="yakult.jpeg" class="img-fluid rounded shadow" alt="KunjunganIndustri" style="max-height: 400px; width: 100%; object-fit: cover;">
                 </div>
@@ -235,7 +244,7 @@
                 </div>
             </div>
             
-            <div class="row g-4 align-items-center mb-5 p-3 rounded shadow-lg bg-light-trans">
+            <div class="row g-4 align-items-center mb-5 p-3 rounded shadow-lg bg-light-trans fade-in-on-scroll">
                 <div class="col-md-6">
                     <img src="experimentbrg.jpeg" class="img-fluid rounded shadow" alt="Experimen Rutin" style="max-height: 400px; width: 100%; object-fit: cover;">
                 </div>
@@ -248,7 +257,7 @@
                 </div>
             </div>
 
-            <div class="row g-4 align-items-center p-3 rounded shadow-lg bg-light-trans">
+            <div class="row g-4 align-items-center p-3 rounded shadow-lg bg-light-trans fade-in-on-scroll">
                 <div class="col-md-6 order-md-2">
                     <img src="collab.jpeg" class="img-fluid rounded shadow" alt="Latihan Gabungan" style="max-height: 400px; width: 100%; object-fit: cover;">
                 </div>
@@ -268,7 +277,7 @@
     <section id="register-now" class="py-5 text-center bg-light">
     <div class="image-container">
         <a href="https://wa.me/+6287786411929?text=Halo%20KIRALA%2C%20saya%20ingin%20bergabung%20dengan%20KIRALA.%20Apa%20saja%20syaratnya%3F" 
-           class="register-link d-inline-block animate__animated animate__fadeInUp animate__delay-1s">
+           class="register-link d-inline-block">
             
             <img src="register.jpeg" alt="Daftar Sekarang" 
                  class="img-fluid register-img shadow-lg" 
@@ -300,5 +309,29 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script untuk mengaktifkan animasi saat scrolling
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in-on-scroll');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Hentikan observasi setelah terlihat
+                    }
+                });
+            }, {
+                // Margin 0px berarti elemen akan aktif saat 100% terlihat
+                // Root margin 0% 0% -10% 0% berarti aktif saat 10% dari bawah viewport
+                rootMargin: '0px 0px -10% 0px', 
+                threshold: 0.1 // Aktif saat 10% elemen terlihat
+            });
+
+            elements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
